@@ -8,76 +8,71 @@
     {
         public static void Main()
         {
-            Dictionary<string, int> dic = new Dictionary<string, int>();
-            Dictionary<string, int> trashDic = new Dictionary<string, int>();
+            SortedDictionary<string, int> junk = new SortedDictionary<string, int>();
+            Dictionary<string, int> possibelItems = new Dictionary<string, int>();
+            possibelItems.Add("shards", 0);
+            possibelItems.Add("fragments", 0);
+            possibelItems.Add("motes", 0);
 
-            dic["Shards"] = 0;
-            dic["Fragments"] = 0;
-            dic["Motes"] = 0;
-            bool ready = false;
+            string legendaryMaterial = string.Empty;
+            bool isOK = true;
 
-            while (true)
+            while (isOK)
             {
-                if (ready)
-                {
-                    break;
-                }
-                string[] input = Console.ReadLine()
-                                        .Split(' ')
-                                        .ToArray();
+                List<string> curentRow = Console.ReadLine().ToLower().Split().ToList();
 
-                for (int i = 1; i <= input.Length - 1; i++)
+                for (int i = 0; i < curentRow.Count; i += 2)
                 {
-                    int quantity = 0;
-                    string material = "";
+                    int quantity = int.Parse(curentRow[i]);
+                    string material = curentRow[i + 1];
 
-                    if (i % 2 != 0)
+                    if (material == "shards" || material == "fragments" || material == "motes")
                     {
-                        quantity = int.Parse(input[i]);
+                        possibelItems[material] += quantity;
                     }
                     else
                     {
-                        material = input[i];
-                    }
-
-                    if (material == "Shard" || material == "Fragments" || material == "Dragonwrath")
-                    {
-                        dic[material] += quantity;
-                    }
-                    else
-                    {
-                        if (!trashDic.ContainsKey(material))
+                        if (!junk.ContainsKey(material))
                         {
-                            trashDic[material] = 0;
+                            junk[material] = quantity;
                         }
-                        trashDic[material] += quantity;
+                        else
+                        {
+                            junk[material] += quantity;
+                        }
                     }
-
-                    if (dic["Shards"] >= 250 || dic["Fragments"] >= 250 || dic["Dragonwrath"] >= 250)
+                    if (possibelItems.ContainsKey(material) && possibelItems[material] >= 250)
                     {
-                        ready = true;
+                        possibelItems[material] -= 250;
+                        legendaryMaterial = material;
+                        isOK = false;
                         break;
                     }
                 }
+
             }
 
-            if (dic["Shards"] >= 250)
+            switch (legendaryMaterial)
             {
-                Console.WriteLine("Shadowmourne obtained!");
-                dic["Shards"] -= 250;
-            }
-            else if (dic["Fragments"] >= 250 )
-            {
-                Console.WriteLine("Valanyr obtained!");
-                dic["Fragments"] -= 250;
-            }
-            else if (dic["Motes"] >= 250)
-            {
-                Console.WriteLine("Dragonwrath obtained!");
-                dic["Motes"] -= 250;
+                case "fragments":
+                    Console.WriteLine("Valanyr obtained!");
+                    break;
+                case "shards":
+                    Console.WriteLine("Shadowmourne obtained!");
+                    break;
+                case "motes":
+                    Console.WriteLine("Dragonwrath obtained!");
+                    break;
             }
 
-            // TO DO
+            foreach (KeyValuePair<string, int> item in possibelItems.OrderByDescending(x => x.Value).ThenBy(x => x.Key))
+            {
+                Console.WriteLine("{0}: {1}", item.Key, item.Value);
+            }
+            foreach (KeyValuePair<string, int> mat in junk)
+            {
+                Console.WriteLine("{0}: {1}", mat.Key, mat.Value);
+            }
         }
     }
 }

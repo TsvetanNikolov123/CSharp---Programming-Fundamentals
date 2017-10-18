@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.LogsAggregator", "08.Log
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.LegendaryFarming", "09.LegendaryFarming\09.LegendaryFarming.csproj", "{25B397FB-A37E-4DDF-AB5F-04D65BA658CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.СръбскоUnleashed", "10.СръбскоUnleashed\10.СръбскоUnleashed.csproj", "{6A9686D7-8F3A-4CD7-A823-17DAEC68BBDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.DragonArmy", "11.DragonArmy\11.DragonArmy.csproj", "{E468A91C-D0B2-48EC-9341-637D8D312445}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{25B397FB-A37E-4DDF-AB5F-04D65BA658CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25B397FB-A37E-4DDF-AB5F-04D65BA658CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25B397FB-A37E-4DDF-AB5F-04D65BA658CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A9686D7-8F3A-4CD7-A823-17DAEC68BBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A9686D7-8F3A-4CD7-A823-17DAEC68BBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A9686D7-8F3A-4CD7-A823-17DAEC68BBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A9686D7-8F3A-4CD7-A823-17DAEC68BBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E468A91C-D0B2-48EC-9341-637D8D312445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E468A91C-D0B2-48EC-9341-637D8D312445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E468A91C-D0B2-48EC-9341-637D8D312445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E468A91C-D0B2-48EC-9341-637D8D312445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
