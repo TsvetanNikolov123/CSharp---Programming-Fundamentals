@@ -1,17 +1,15 @@
-﻿using System;
-
-namespace _05.BookLibrary
+﻿namespace _06.BookLibraryModification
 {
     using System;
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
 
-    public class BookLibrary
+    public class BookLibraryModification
     {
         public static void Main()
         {
-            Library library = new Library()
+            var library = new Library()
             {
                 Name = "Prosveta",
                 Books = new List<Book>()
@@ -34,34 +32,17 @@ namespace _05.BookLibrary
 
                 library.Books.Add(book);
             }
+            DateTime givenDate = DateTime.ParseExact(Console.ReadLine(), "dd.MM.yyyy", CultureInfo.InvariantCulture);
 
-            string[] authors = library
-                                    .Books
-                                    .Select(a => a.Author)
-                                    .Distinct()
-                                    .ToArray();
+            List<Book> afterGivenDate = library.Books
+                                                    .Where(x => x.ReleaseDate > givenDate)
+                                                    .OrderBy(x => x.ReleaseDate)
+                                                    .ThenBy(x => x.Title)
+                                                    .ToList();
 
-            List<AuthorInfo> authorSales = new List<AuthorInfo>();
-
-            foreach (var author in authors)
+            foreach (var book in afterGivenDate)
             {
-                decimal sales = library.Books
-                                       .Where(a => a.Author == author)
-                                       .Sum(a => a.Price);
-
-                AuthorInfo authorInfo = new AuthorInfo()
-                {
-                    Author = author,
-                    Sales = sales
-                };
-                authorSales.Add(authorInfo);
-            }
-
-            authorSales = authorSales.OrderByDescending(a => a.Sales).ThenBy(a => a.Author).ToList();
-
-            foreach (var authorInfo in authorSales)
-            {
-                Console.WriteLine($"{authorInfo.Author} -> {authorInfo.Sales:F2}");
+                Console.WriteLine($"{book.Title} -> {book.ReleaseDate:dd.MM.yyyy}");
             }
         }
     }
