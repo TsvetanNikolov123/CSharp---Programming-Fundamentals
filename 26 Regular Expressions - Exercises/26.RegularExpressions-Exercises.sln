@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.ValidUsernames", "06.Val
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.01.Weather", "04.01.Weather\04.01.Weather.csproj", "{165044BD-8888-470F-9C22-59B0372EBE2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.QueryMess", "07.QueryMess\07.QueryMess.csproj", "{13BD5B8B-8A51-42FF-B25F-F9844D407BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.UseYourChainsBuddy", "08.UseYourChainsBuddy\08.UseYourChainsBuddy.csproj", "{CE978D60-527D-4E6D-B656-F95B8FBE7C48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{165044BD-8888-470F-9C22-59B0372EBE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{165044BD-8888-470F-9C22-59B0372EBE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{165044BD-8888-470F-9C22-59B0372EBE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BD5B8B-8A51-42FF-B25F-F9844D407BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BD5B8B-8A51-42FF-B25F-F9844D407BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BD5B8B-8A51-42FF-B25F-F9844D407BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BD5B8B-8A51-42FF-B25F-F9844D407BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE978D60-527D-4E6D-B656-F95B8FBE7C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE978D60-527D-4E6D-B656-F95B8FBE7C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE978D60-527D-4E6D-B656-F95B8FBE7C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE978D60-527D-4E6D-B656-F95B8FBE7C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
