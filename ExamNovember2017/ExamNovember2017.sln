@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Anonymous Downsite", "01. Anonymous Downsite\01. Anonymous Downsite.csproj", "{0652F190-8DC4-4F2A-8BB5-5C878BA354FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Anonymous Threat", "02. Anonymous Threat\02. Anonymous Threat.csproj", "{0B0E6F12-694C-438F-9A03-33066E627301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.AnonymousVox", "03.AnonymousVox\03.AnonymousVox.csproj", "{0538D5CD-AEC4-41C8-B253-087227212D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.AnonymousCache", "04.AnonymousCache\04.AnonymousCache.csproj", "{21824862-CD40-47E4-8172-BB4B074242CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0652F190-8DC4-4F2A-8BB5-5C878BA354FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0652F190-8DC4-4F2A-8BB5-5C878BA354FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0652F190-8DC4-4F2A-8BB5-5C878BA354FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0652F190-8DC4-4F2A-8BB5-5C878BA354FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0E6F12-694C-438F-9A03-33066E627301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0E6F12-694C-438F-9A03-33066E627301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0E6F12-694C-438F-9A03-33066E627301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0E6F12-694C-438F-9A03-33066E627301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0538D5CD-AEC4-41C8-B253-087227212D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0538D5CD-AEC4-41C8-B253-087227212D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0538D5CD-AEC4-41C8-B253-087227212D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0538D5CD-AEC4-41C8-B253-087227212D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21824862-CD40-47E4-8172-BB4B074242CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21824862-CD40-47E4-8172-BB4B074242CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21824862-CD40-47E4-8172-BB4B074242CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21824862-CD40-47E4-8172-BB4B074242CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
